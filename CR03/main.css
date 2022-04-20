@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap");
+
+:root {
+  --text_col: #45391a;
+  --small: 2rem;
+  --medium: 4rem;
+  --big: 5rem;
+  --light: #ffffff;
+  --darker: #f7cd95;
+}
+/* BASE */
+body {
+  background-image: url("./img/watercolors.png");
+  background-repeat: repeat;
+  opacity: 1;
+  background-attachment: fixed;
+  color: #462909 !important;
+}
+
+.headings {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.8rem !important;
+  color: #462909 !important;
+}
+
+.headings_smaller {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.8rem !important;
+  color: #462909 !important;
+}
+
+/* NAV BAR */
+.info_btn {
+  background-color: #ffffff !important;
+}
+
+.skapidor {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.5rem !important;
+  color: #f7f7f7 !important;
+}
+
+.nav_bg {
+  padding-top: 3rem;
+  background: rgb(166, 47, 20);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 47, 20, 1) 0%,
+    rgba(191, 147, 15, 0.8281687675070029) 100%
+  );
+}
+/* ABOUT */
+.about {
+  padding: var(--small) 0;
+  margin: 2rem var(--small);
+  background-color: #f3b562;
+  border-radius: 10px;
+}
+
+.about h3,
+p {
+  padding: 0.5rem;
+  color: var(--text_col);
+}
+
+/* CAROUSEL */
+.rest_carousel {
+  width: 100% !important;
+  height: 60vh;
+  object-fit: cover;
+}
+
+/* ALLERGENS */
+.alergens {
+  background-color: var(--darker);
+  margin: 0rem var(--small);
+  padding: 3rem 0;
+  color: var(--text_col);
+  border-radius: 10px;
+}
+
+.legend_bg {
+  background-color: #f3b562;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  font-size: 1em;
+  padding: 0.1rem;
+  margin-left: 1rem;
+}
+
+/* STARTERS */
+.starters {
+  background-color: var(--darker);
+  padding: var(--small) 0;
+  margin: 0 var(--small);
+  border-radius: 10px;
+}
+
+/* MAIN DISH*/
+.main_dish {
+  background-color: var(--darker);
+  padding: var(--small) 0;
+  margin: var(--small);
+  border-radius: 10px;
+}
+
+/* DESSERTS */
+.desserts {
+  background-color: var(--darker);
+  padding: var(--small) 0;
+  margin: var(--small);
+  border-radius: 10px;
+}
+/* BEVERAGES */
+.beverages {
+  background-color: var(--darker);
+  padding: var(--small) 0;
+  margin: var(--small);
+  border-radius: 10px;
+}
+
+.badge {
+  background: rgb(166, 47, 20);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 47, 20, 1) 0%,
+    rgba(161, 122, 5, 0.828) 100%
+  );
+}
+
+/* FOOTER */
+
+footer {
+  padding-top: 1rem;
+  background: rgb(166, 47, 20);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 47, 20, 1) 0%,
+    rgba(191, 147, 15, 0.8281687675070029) 100%
+  );
+}
+
+footer p {
+  color: rgb(252, 248, 217);
+}
+
+/* REVIEW SETTIGNS */

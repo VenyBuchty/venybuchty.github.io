@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Code Review 03
+    </title>
+</head>
+<body>
+
+
+
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark nav_bg">
+    <div class="container">
+            <div class="col-4 d-flex justify-content-start">
+                <a class="navbar-brand" href="./index.html">
+            <h1 class="skapidor">Skapid'or</h1>
+            </a>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center ">
+                 <a href="./reviews.html">
+            <button class="btn btn-outline-light" type="button">Reviews</button></a> 
+                <form class="form-inline">
+            <a href="mailto:skapidor@restaurant.at?subject=Reservation&body=Hi everybody, I would like to have a reservation">
+                <button class="btn btn-outline-light" type="button">Book a table</button>
+            </a>
+            </form> 
+            </div>
+</nav>
+
+
+<!-- HERO -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/rest2.jpg" class="d-block rest_carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/rest3.jpg" class="d-block rest_carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/rest4.jpg" class="d-block rest_carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/rest5.jpg" class="d-block rest_carousel" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/rest6.jpg" class="d-block rest_carousel" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                <img src="./img/hero-image-smal.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-lg-8 text-center">
+                <h3 class="headings">Skapid'or is your <b>new favorite place</b> to taste rustic cuisine</h3>
+                <p>Nowhere in <b>Vienna is the Orient</b>  as close as in Skapid'or. Maybe that is because the energy and pulse of
+                life is similar to the markets of <b>Marakesh</b>  or the shouks of Tel Aviv, both in the Vienna itself as well as within
+                the walls of <b>Skapid'or's restaurant.</b> <p>We feel at home surrounded by the sounds of the market stalls and the smells of the
+                spices. And <b>you can taste</b> that in our dishes.
+                A healthy portion of indifference and debauchery is absolutely permitted at the 
+                <b>Skapid'or.</b>
+                Celebrating life and enjoyment is what we do best here.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- MENU -->
+
+
+<main>
+<section class="alergens">
+    <div  class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="headings">Take a look at our MENU</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5 class="headings_smaller">Ingredients info:</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="accordion " id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header legend_bg" id="headingOne">
+                        <button class="accordion-button border-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Allergens
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-white ">
+                            <ul class="d-flex flex-wrap" ole="list">
+                                <li>&#128026; - Moluscs</li>
+                                <li>&#129370; - Eggs</li>
+                                <li>&#128031; - Fish</li>
+                                <li>&#127806; - Lupin</li>
+                                <li>&#129388; - Celery</li>
+                                <li>&#127793; - Soya</li>
+                                <li>&#129371; - Milk</li>
+                                <li>&#129372; - Peanuts</li>
+                                <li>&#129366; - Gluten</li>
+                                <li>&#129514; - Sulphites</li>
+                                <li>&#129408; - Crustaceans</li>
+                                <li>&#127789; - Mustard</li>
+                                <li>&#129381; - Nuts</li>
+                                <li>&#129391; - Sesame</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header legend_bg" id="headingTwo">
+                        <button class="accordion-button border-dark collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Hot Meter
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-white">
+                            <ul class="d-flex flex-wrap" role="list">
+                                <li>&#127798; - Light</li>
+                                <li>&#127798;&#127798; - You will feel it</li>
+                                <li>&#127798;&#127798;&#127798; - Like hell</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- STARTERS -->
+
+<section class="starters">
+<div class="container">
+    <div class="col">
+        <div class="col-sm text-center">
+            <h2 class="headings">STARTERS</h2>
+        </div>
+        <div class="col-sm text-center">
+            <p>Starters consist of a wide variety of hot or cold dishes served before the main course of a meal. As part of a formal
+            dinner, they may be preceded by soup and hors d'oeuvres.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/starter1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hummus de Tulus</h5>
+                    <p class="card-text">Two delicious hummuses served with three types of bread, tomatoes and garlic paste.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129372;&#129366;&#129388;</h5>
+                    <h5><span class="badge">4,59€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/starter2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Egg ala Benediktus</h5>
+                    <p class="card-text">Hard-boiled eggs served with toast bread, with salmon spread, garnished with pesto.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129370;&#128031;&#129366;</h5>
+                    <h5><span class="badge">3,49€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/starter3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bruschetta-bread</h5>
+                    <p class="card-text">Homemade sourdough bread made from wholemeal flour, lined with tomatoes in garlic sauce, sprinkled with hard cheese</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129371;&#129366;</h5>
+                    <h5><span class="badge">4,99€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/starter4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cheesos Dipos</h5>
+                    <p class="card-text">4 types of cheese fried in a delicious beer dough, served with chili dip</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129371;&#129366;</h5>
+                    <h5>&#127798; <span class="badge">6,49€</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- MAIN DISHES -->
+<section class="main_dish">
+<div class="container meals_heading">
+    <div class="col">
+        <div class="col-sm text-center">
+            <h2 class="headings">MAIN DISHES</h2>
+        </div>
+        <div class="col-sm text-center">
+            <p>The main dish is usually the heaviest, heartiest, and most complex or substantial dish in a meal. The main ingredient is
+            usually meat, fish or another protein source. It is most often preceded by an appetizer, soup or salad, and followed by
+            a dessert.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/main4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sajo Machojas</h5>
+                    <p class="card-text">Prawn broth flavored with coriander served with rice.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#128031;&#128026;&#127806;&#127793;&#129408;</h5>
+                    <h5><span class="badge">12,99€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/main5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Musseles lump</h5>
+                    <p class="card-text">Classically prepared mussels, served with lemon dip, covered with mushroom powder.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#128031;&#128026;&#129408;</h5>
+                    <h5><span class="badge">17,99€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/main7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Indian night</h5>
+                    <p class="card-text">Ancient vegetable Indian dish, created exclusively with vegan ingredients, cooked 18 hours.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#127806;&#129388;&#127793;&#129381;</h5>
+                    <h5>&#127798;&#127798; <span class="badge">9,99€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/main8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chewy king</h5>
+                    <p class="card-text">Piece of ripe pork knee, slowly cooked, served with vegetables and potato chips.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#127789;&#129514;</h5>
+                    <h5><span class="badge">11,59€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/main9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Carcase del Panpase</h5>
+                    <p class="card-text">Large piece of beef, with garlic dip, served with french fries and vegetable salad.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#127789;&#129371;&#129514;</h5>
+                    <h5><span class="badge">14,49€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/main10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Potatoe Smah'n</h5>
+                    <p class="card-text">Szeged-style gulas, served with large potatoes and whipped cream.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129388;&#129371;&#129381;</h5>
+                    <h5>&#127798; <span class="badge">10,99€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/main3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fishy Squishy</h5>
+                    <p class="card-text">Sea ​​trout, marinated in garlic and and grilled, served with boiled potatoes.</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#128031;&#129371;</h5>
+                    <h5><span class="badge">18,99€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/main2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Asparguser Dener</h5>
+                    <p class="card-text">Cooked beef with rice and vegetable in asparagus broth</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#127806;&#129388;&#127789;&#129381;</h5>
+                    <h5><span class="badge">11,99€</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</section>
+
+<!-- DESSERTS DISHES -->
+<section class="desserts">
+<div class="container meals_heading">
+    <div class="col">
+        <div class="col-sm text-center">
+            <h2 class="headings">DESSERTS</h2>
+        </div>
+        <div class="col-sm text-center">
+            <p>Dessert is a course that concludes a meal. The term dessert can apply to many confections, such as
+            biscuits, cakes, cookies, custards, gelatins, ice creams, pastries, pies, puddings, sweet soups, and tarts. Fruit is
+            also commonly found in dessert courses because of its naturally occurring sweetness.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/dess1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gofferis</h5>
+                    <p class="card-text">Waffle from a delicious dough, with ice cream of your choice and fruit</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129371;&#129366;&#129514;</h5>
+                    <h5><span class="badge">4,59€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/dess2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Apple Dream</h5>
+                    <p class="card-text">Apple puree with baked muesli in vanilla cream</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129371;&#129366;&#129514;&#129381;</h5>
+                    <h5><span class="badge">3,49€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/dess3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mousse Berry</h5>
+                    <p class="card-text">Chocolate mousse, with raspberry cream and grated gingerbread</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129371;&#129366;&#129514;&#129381;</h5>
+                    <h5><span class="badge">4,99€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/dess4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Brulee des Cremas</h5>
+                    <p class="card-text">Classic creme Bruelle served with currant sauce</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129371;&#129514;</h5>
+                    <h5><span class="badge">6,49€</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- BEVERAGES -->
+<section class="beverages">
+<div class="container meals_heading">
+    <div class="col">
+        <div class="col-sm text-center">
+            <h2 class="headings">BEVERAGES</h2>
+        </div>
+        <div class="col-sm text-center">
+            <p>A liquid to consume, usually excluding water; a drink. This may include tea, coffee, liquor, beer, milk, juice, or soft
+            drinks.. A treat, or drink money.. beverage synonyms: drink. beverage pronunciation.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/beer.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Beer</h5>
+                    <p class="card-text">We offer a large selection of various beers</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129514;&#129366;</h5>
+                    <h5><span class="badge">from 2,59€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/drinks.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Coctails</h5>
+                    <p class="card-text">We'll mix you anything you can think of</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129514;</h5>
+                    <h5><span class="badge">from 5,49€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/limonade.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Home-made Lemonade</h5>
+                    <p class="card-text">Taste our homemade lemonades of all tastes</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129514;</h5>
+                    <h5><span class="badge">from 4,99€</span></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./img/coffee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Coffee</h5>
+                    <p class="card-text">We prepare exclusively the original Brazilian coffee</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <h5>&#129514;&#129371;&#129366;</h5>
+                    <h5><span class="badge">from 2,49€</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+
+
+
+<!-- FOOTER -->
+<footer class="text-center text-lg-start">
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-lg-12 col-md-12 mb-4 mb-md-0 d-flex justify-content-center">
+                <h2 class="skapidor">Skapid'or</h2>
+            </div>
+           
+            <div class="col-lg-12 col-md-12 mb-4 mb-md-0 d-flex justify-content-center">
+                <p>&#128222; +43 5565 2342 | &#128233; skapidor@restaurant.at | &#127968; Rottenturm Straße 34, 1010 Wien</p>
+            </div>
+        </div>
+    </div>
+
+            
+<!-- Copyright -->
+<div class="text-center text-light">
+    © 2021 Copyright:
+    <a class="text-light" href="https://github.com/VenyBuchty">Vendula Buchtova</a>
+</div>
+</footer>
+            
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
